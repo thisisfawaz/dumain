@@ -13,7 +13,7 @@ export function Achievements() {
             </div>
             <h3 className="t-h3b">Our edge in excellence</h3>
           </div>
-          <p className="t-h4 text-body lg:w-3/5">With decades of industry experience, a diverse range of services, and a dedicated team, we deliver exceptional quality.</p>
+          <p className="t-h4 text-body">With decades of industry experience, a diverse range of services, and a dedicated team, we deliver exceptional quality.</p>
           <Rule />
         </div>
 
