@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { industries } from "@/lib/industries";
 import { companyImages } from "@/lib/media";
@@ -74,11 +73,13 @@ export function Industries() {
 
                   return (
                     <li key={ind.slug}>
-                      <Link
-                        href={`/companies#${ind.companySlug}`}
+                      <button
+                        type="button"
+                        onClick={() => setActive(i)}
                         onMouseEnter={() => setActive(i)}
                         onFocus={() => setActive(i)}
-                        className={`flex items-center gap-4 border-b border-navy/10 py-4 transition-colors duration-300 ${
+                        aria-pressed={isActive}
+                        className={`flex w-full items-center gap-4 border-b border-navy/10 py-4 text-left transition-colors duration-300 ${
                           isActive ? "text-navy" : "text-navy/55 hover:text-navy/80"
                         }`}
                       >
@@ -102,7 +103,7 @@ export function Industries() {
                             {ind.blurb}
                           </span>
                         </span>
-                      </Link>
+                      </button>
                     </li>
                   );
                 })}
