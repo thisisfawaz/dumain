@@ -18,8 +18,8 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25"
       />
-      <div className="relative container-site flex flex-col gap-16 pb-20 pt-32 md:pb-32 md:pt-40 lg:pb-44 lg:pt-48">
-        <div className="flex flex-col gap-4">
+      <div className="relative container-site flex flex-col gap-16 pb-20 pt-28 md:pb-28 md:pt-32 lg:pb-36 lg:pt-36">
+        <div data-reveal className="flex flex-col gap-4">
           <div className="inline-flex w-fit items-center gap-3 rounded bg-white/20 p-1 pr-3 backdrop-blur">
             <span className="rounded-sm bg-cream px-3 py-1 text-xs text-primary">Excellence</span>
             <span className="text-xs text-white">Delivered across every sector we serve</span>
@@ -29,7 +29,7 @@ export function Hero() {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div data-reveal data-reveal-delay="180" className="flex flex-col gap-6">
           <p className="t-body max-w-[420px] text-white">
             Dumain Group is a diversified conglomerate delivering excellence across real estate, logistics, technology, business solutions, facility management, and community development.
           </p>

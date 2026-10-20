@@ -6,7 +6,7 @@ export function Advantages() {
   return (
     <section className="bg-cream py-20 md:py-28">
       <div className="container-site flex flex-col gap-12">
-        <div className="flex flex-col gap-10">
+        <div data-reveal className="flex flex-col gap-10">
           <div className="flex items-center gap-3">
             <span className="caption-dot" aria-hidden="true" />
             <p className="caption text-body">Benefits You&rsquo;ll Gain</p>

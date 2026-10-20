@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SkipLink } from "@/components/ui";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { siteConfig } from "@/lib/site";
 
 const poppins = Poppins({
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" className={poppins.variable}>
       <body>
         <SkipLink />
+        <ScrollReveal />
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
