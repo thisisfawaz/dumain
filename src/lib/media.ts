@@ -20,7 +20,8 @@ export const media = {
   whyTubes: u("photo-1518770660439-4636190af475"),
   whyThumbs:
     "https://images.pexels.com/photos/5915200/pexels-photo-5915200.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  whyPurity: u("photo-1581092160562-40aa08e78837"),
+  whyPurity:
+    "https://images.pexels.com/photos/159375/construction-site-build-construction-work-159375.jpeg?auto=compress&cs=tinysrgb&w=1200",
 
   // Solution — data / server / IT (African context)
   solutionRack:
