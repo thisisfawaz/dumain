@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-cream font-sans text-body antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-navy;
+    text-wrap: balance;
+  }
+  ::selection {
+    background-color: #c62828;
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid #c62828;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-5 md:px-8 lg:px-10;
+  }
+
+  /* Section header: dot + uppercase caption, then heading, then hairline rule */
+  .caption {
+    @apply inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.03em] md:text-base;
+  }
+  .caption-dot {
+    @apply inline-block h-4 w-4 shrink-0 rounded-full bg-accent;
+  }
+
+  /* Template type scale */
+  .t-h1 {
+    @apply text-[32px] font-semibold leading-[36px] tracking-[-0.03em] md:text-[46px] md:leading-[52px] lg:text-[56px] lg:leading-[62px];
+  }
+  .t-h2 {
+    @apply text-[32px] font-semibold leading-[32px] tracking-[-0.03em] md:text-[40px] md:leading-[40px] lg:text-[52px] lg:leading-[52px];
+  }
+  .t-h3 {
+    @apply text-[18px] font-normal leading-[24px] tracking-[-0.03em] md:text-[24px] md:leading-[32px] lg:text-[32px] lg:leading-[44px];
+  }
+  .t-h3b {
+    @apply text-[24px] font-medium leading-[26px] tracking-[-0.04em] md:text-[36px] md:leading-[40px] lg:text-[48px] lg:leading-[54px];
+  }
+  .t-h4 {
+    @apply text-[15px] font-normal leading-[22px] tracking-[-0.03em] md:text-[18px] md:leading-[24px] lg:text-[20px] lg:leading-[28px];
+  }
+  .t-h5 {
+    @apply text-[18px] font-medium leading-[20px] tracking-[-0.03em] md:text-[20px] md:leading-[24px] lg:text-[20px] lg:leading-[26px];
+  }
+  .t-body {
+    @apply text-[15px] font-normal leading-[18px] tracking-[-0.03em] md:text-[16px] md:leading-[21px] lg:text-[16px] lg:leading-[24px];
+  }
+  .t-small {
+    @apply text-[14px] font-normal leading-[18px] tracking-[-0.03em] md:text-[15px] md:leading-[21px] lg:text-[16px] lg:leading-[20px];
+  }
+
+  .rule {
+    @apply block h-[2px] w-full rounded-full bg-body/30;
+  }
+}
